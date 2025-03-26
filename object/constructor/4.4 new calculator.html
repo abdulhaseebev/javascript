@@ -6,30 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-
-    <script> 
-
-    let calculator ={
-
-        read(){
+    <script>
+        function calculator(){
+            this.read()=function(){
+        
             this.a=Number(prompt("a?",));        
             this.b=Number(prompt("b?",));
         },
-        sum(){
-            return (this.a+this.b);}
-        ,
-        mul(){
-            return (this.a+this.b);}
-        }
+        this.sum()=function(){
+            return (this.a+this.b);
+
+        },
+        this.mul()=function(){
+            return (this.a*this.b);
+
+
+        }}
+        let calculator =new calculator();
         calculator.read();
        alert( calculator.sum());
        alert( calculator.mul());
 
+        
+
 
     </script>
-
-
-
     
 </body>
 </html>

@@ -6,14 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-
     <script>
-        let style=["jazz","blues"];
-        style.push("rock n roll");
-        style[math.floor((style.length-1)/2)]="cancelled";
-        style.shift();
-        style.unshift("hi","hello");
+        let arr=["a","b"];
+        arr.push(function (){
+            alert(this)
+        })
+       // arr[2] is  a,b function(){}
     </script>
-    
 </body>
 </html>

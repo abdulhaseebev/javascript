@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function suminput(){
+            let number =[];
+            while(true){
+                let value=prompt("a number",0)
+                if (value == ""||value == null||!isFinite(value))break;
+                number.push(+value);
+
+            }
+            let sum=0;
+            for(let num of number){
+                sum=sum+num;
+            }
+            return sum;
+        }
+        
+    </script>
+</body>
+</html>

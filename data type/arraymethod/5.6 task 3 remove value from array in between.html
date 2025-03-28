@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function filterrangeinplace (arr,a,b){
+        for( let i=0;i<arr.length;i++){
+            if(arr[i] <a || arr[i] > b){
+                arr.splice(i,1);
+                i--;}
+            }
+
+        }
+        let num =[5,3,8,1];
+        filterrangeinplace(num,1,4)
+        alert(num);
+    
+
+
+    </script>
+    
+</body>
+</html>

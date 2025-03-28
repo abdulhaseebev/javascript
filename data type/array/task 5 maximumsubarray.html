@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function getmaximumsubsum(arr){
+let sum =0;
+let maxsum=0;
+
+
+    for(let num of arr){
+        
+      sum=sum+num;
+      maxsum=Math.max(maxsum,sum);
+      if (sum<0) sum=0;
+    }
+    return maxsum;
+}
+
+alert(getmaximumsubsum([1,2,3,-1,4]));
+
+alert(getmaximumsubsum([-1,-2,3,-1,,11]));
+
+alert(getmaximumsubsum([-1,-2,-3]));
+
+    </script>
+</body>
+</html>

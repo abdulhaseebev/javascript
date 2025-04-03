@@ -7,23 +7,25 @@
 </head>
 <body>
 <script>
-
-function makeWorker() {
-  let name = "Pete";
+  function makeCounter() {
+  let count = 0;
 
   return function() {
-    alert(name);
+    count = count+1
+    return count
   };
 }
 
-let name = "John";
+let counter = makeCounter();
+let counter2 = makeCounter();
 
-// create a function
-let work = makeWorker();
+alert( counter() ); // 0
+alert( counter() ); // 1
 
-// call it
-work();
-// answer is "pete" because it declares in function
+
+alert( counter2() ); // 0
+alert( counter2() ); // 1
+
 
 
 </script>

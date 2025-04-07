@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function askpassword(ok,fail){
+    let password = prompt("enter a password",'');
+    if(password== "haseeb") ok();
+    else fail();
+}
+
+let user= {
+name : "john",
+    loginok(){
+        alert(this.name)
+    },
+    loginfail(){
+        alert("sorry");
+    }
+}
+
+askpassword(user.loginok.bind(user),user.loginfail.bind(user));
+
+    </script>
+</body>
+</html>

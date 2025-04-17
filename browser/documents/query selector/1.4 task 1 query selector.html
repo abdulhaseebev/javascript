@@ -1,0 +1,33 @@
+
+
+let table =document.getElentById('age-table')
+
+2 to get all label elements
+table.getElementByTagName('label')
+
+
+
+ 3 The first td in that table (with the word "Age")
+table.rows[0].cells[0]
+
+
+table.getElementsByTagName('td')[0]
+
+
+ 4. The form with name search only one element with name =search
+
+let form = document.getElementsByName('search')[0]
+
+document.querySelector('form[name="search"]')
+
+ 5. The first input in form
+
+form.getElementsByTagName('input')[0]
+
+
+
+ 6. The last input in that form
+let inputs = form.querySelectorAll('input') 
+
+
+inputs[inputs.length-1]

@@ -15,7 +15,7 @@
   <script>
     let thumb = slider.querySelector('.thumb');
 
-    thumb.onmousedown = function(event) {
+    thumb.onmousedown = function(event) { 
       event.preventDefault(); // prevent selection start (browser action)
 
       let shiftX = event.clientX - thumb.getBoundingClientRect().left;
@@ -25,7 +25,7 @@
       document.addEventListener('mouseup', onMouseUp);
 
       function onMouseMove(event) {
-
+      
 
         let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
 
